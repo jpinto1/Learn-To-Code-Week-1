@@ -2,8 +2,8 @@
 
 
 body {
-	font-family: 'Pacifico', sans-serif;
-	color: #e5e5e5;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
 	font-size: 12px;
 	background:#bfbfbf;
 
@@ -12,9 +12,9 @@ body {
 
 
 h1, h2 {
-	font-family: 'Pacifico', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	margin:0 0 15px 0;
+	margin:0 0 5px 0;
 }
 
 
@@ -113,7 +113,7 @@ a {
 	padding: 15px 2% 0 2%;
 	text-align: center;
 
-	color: #fff;
+	color: #0e0;
 }
 .subMenu a:hover {
 	background: #1783c7;
@@ -133,16 +133,16 @@ a {
 
 /* SECTIONS */
 .sTop {
-	min-height: 130px;
-	background:#fff;
-	color:#3d3d3d;
-	padding: 50px 0;
-	height: 300px;
+	min-height: 75px;
+	background:#ad543a;
+	color:black;
+	padding: 30px 0;
+	height: 10px;
 
 }
 
 .s1 {
-	background:#184764;
+	background:#5e5e5e;
 	color:#fff;
 
 }
@@ -157,4 +157,137 @@ a {
 
 .s3 {
 	background: #1b83b3;
+}
+
+.view {
+  width:460px;
+  height:400px;
+  margin:10px;
+  float:left;
+  overflow:hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.view .mask, .view .content {
+  width: 460px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+  top:0;
+  left:0;
+}
+
+.view img{
+  display: block;
+  position: relative;
+}
+
+.view h2{
+  color: rgb(0,0,0);
+  text-align: center;
+  position: relative;
+  font-size: 36px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.view p {
+  font-family: "Raleway";
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 10px;
+  text-align: center;
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.view a.info:hover{
+  box-shadow: 0 0 5px #000;
+}
+
+.view-ten img{
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transition: all .8s ease-in-out;
+ -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition:all .8s ease-in-out;
+  -ms-transition:all .8s ease-in-out;
+}
+
+.view-ten .mask {
+  background-color: #3e3e3e;
+  transition: all .5s linear;
+  -webkit-transition:  all .5s linear;
+  -moz-transition:  all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition:  all .5s linear;
+opacity: 0;
+}
+
+.view-ten h2{
+  border-bottom: 1 px solid rgba( 0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: scale(0);
+-webkit-transform: scale(0);
+  color: #fff;
+  transition: all .8s linear;
+ -webkit-transition:  all .8s linear;
+  -moz-transition:  all .8s linear;
+  -o-transition: all .8s linear;
+  -ms-transition:  all .8s linear;
+ opacity: 0;
+}
+
+.view-ten p {
+  color: #fff;
+  opacity: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: all .8s linear;
+-webkit-transition:  all .8s linear;
+  -moz-transition:  all .8s linear;
+  -o-transition: all .8s linear;
+  -ms-transition:  all .8s linear;
+}
+
+.view-ten a.info {
+  opacity: 0;
+  transform: scale(0);
+ -webkit-transform: scale(0);
+  transition: all .8s linear;
+   -webkit-transition:  all .8s linear;
+  -moz-transition:  all .8s linear;
+  -o-transition: all .8s linear;
+  -ms-transition:  all .8s linear;
+}
+
+.view-ten:hover img{
+  transform: scale(10);
+ -webkit-transform: scale(10);
+  opacity: .6;
+}
+
+.view-ten:hover .mask{
+  opacity: 1;
+}
+
+.view-ten:hover h2,
+.view-ten:hover p,
+.view-ten:hover a.info{
+  transform: scale(1);
+ -webkit-transform: scale(1);
+  opacity: 1;
 }
